@@ -1,0 +1,37 @@
+model,fold,MAE
+Baseline: persistence (yesterday),1,1974.7230874942738
+Baseline: seasonal naive (last week),1,2648.153458543289
+Baseline: 7-day rolling mean,1,2395.625940710687
+Linear regression,1,1543.5503235189394
+Ridge (alpha=10),1,1543.4295639916284
+Random forest,1,1371.9501342536153
+HistGradientBoosting,1,1347.7248922246638
+XGBoost,1,1296.0453884598317
+LightGBM,1,1298.1714958631119
+Baseline: persistence (yesterday),2,1789.6252293577982
+Baseline: seasonal naive (last week),2,1684.2951834862386
+Baseline: 7-day rolling mean,2,1801.9408093053735
+Linear regression,2,1251.724238099397
+Ridge (alpha=10),2,1250.938014284991
+Random forest,2,983.2919990776235
+HistGradientBoosting,2,851.9714791584108
+XGBoost,2,864.2287391592603
+LightGBM,2,846.9622199352369
+Baseline: persistence (yesterday),3,1849.035552536232
+Baseline: seasonal naive (last week),3,1597.916213768116
+Baseline: 7-day rolling mean,3,1723.8935041407865
+Linear regression,3,1307.83673642833
+Ridge (alpha=10),3,1307.8503367027488
+Random forest,3,1048.7141666689934
+HistGradientBoosting,3,787.3215934539392
+XGBoost,3,810.690858260445
+LightGBM,3,804.5826395770147
+Baseline: persistence (yesterday),4,2078.2948369565215
+Baseline: seasonal naive (last week),4,2090.0964673913045
+Baseline: 7-day rolling mean,4,2270.8968685300206
+Linear regression,4,1248.2279718972188
+Ridge (alpha=10),4,1248.6725135361398
+Random forest,4,1150.715090309536
+HistGradientBoosting,4,919.1244509832069
+XGBoost,4,991.4266322039176
+LightGBM,4,947.7183182153266

@@ -1,0 +1,10 @@
+model,MAE,RMSE,MAPE,R2,configuration,train_seconds,predict_seconds,fit_predict_seconds,fit_seconds,skill_vs_baseline_%,selected_on_validation
+LightGBM,1057.089,1361.426,3.723,0.95,smaller_trees,2.368,0.221,2.589,2.589,47.37,True
+HistGradientBoosting,1068.234,1372.258,3.768,0.95,larger_min_leaf,3.402,0.278,3.68,3.68,46.815,False
+XGBoost,1073.894,1380.291,3.786,0.949,shallower_trees,3.159,0.065,3.224,3.224,46.533,False
+Random forest,1221.884,1610.197,4.336,0.931,original,33.794,0.136,33.93,33.93,39.165,False
+Linear regression,1440.817,1861.649,5.209,0.907,original,0.132,0.019,0.15,0.15,28.265,False
+Ridge (alpha=10),1440.875,1861.634,5.209,0.907,original,0.068,0.013,0.081,0.081,28.262,False
+Baseline: persistence (yesterday),2008.527,2725.745,7.217,0.801,,,,,,0.0,False
+Baseline: 7-day rolling mean,2102.723,2693.92,7.51,0.806,,,,,,-4.69,False
+Baseline: seasonal naive (last week),2261.36,3035.806,7.912,0.753,,,,,,-12.588,False
