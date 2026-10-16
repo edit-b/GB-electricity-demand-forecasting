@@ -53,13 +53,13 @@ Open [energy_demand_report.pbix](powerbi/energy_demand_report.pbix) in Power BI 
 
 | Page | Purpose |
 | --- | --- |
-| Electricity demand overview | Monthly patterns, daily profiles and a weekday/hour heatmap |
-| Demand drivers | Temperature, day types and embedded generation |
+| Electricity demand overview | Monthly patterns, daily profiles, weekday/hour heatmap |
+| Demand drivers | Temperature, day types, embedded generation |
 | Forecast performance | Actual versus predicted demand and errors by hour and season |
-| Model comparison | Accuracy, recorded runtime and model-selection interpretation |
-| Anomaly explorer | Detection methods, flag direction and the largest deviations |
+| Model comparison | Accuracy, recorded runtime, model-selection interpretation |
+| Anomaly explorer | Detection methods, flag direction, largest deviations |
 
-Screenshots show example filter selections; their cards do not always represent the full dataset.
+Screenshots show example filter selections, their cards do not always represent the full dataset.
 
 <details>
 <summary>View the remaining dashboard pages</summary>
@@ -89,7 +89,7 @@ Demand and generation data cover 2023–2025. After creating historical features
 
 | Input | Source used in this project |
 | --- | --- |
-| Transmission demand, embedded solar/wind and pumping | NESO demand-data CSVs for 2023, 2024 and 2025 |
+| Transmission demand, embedded solar/wind and pumping | NESO demand-data CSVs for 2023, 2024, 2025 |
 | London hourly weather | Open-Meteo historical weather API |
 | England and Wales bank holidays | GOV.UK bank-holiday JSON snapshot |
 | School holidays | Manually prepared approximate holiday periods |
@@ -132,13 +132,13 @@ Restart the kernel and run all cells in each notebook before continuing.
 
 | Notebook | Output |
 | --- | --- |
-| [01 — Data collection](notebooks/01_data_collection.ipynb) | Downloaded raw data, if needed |
-| [2 — Database building](notebooks/2_database_building.ipynb) | SQLite tables populated from raw files |
-| [3 — Feature engineering](notebooks/3_feature_engineering.ipynb) | SQL feature table and CSV/Parquet exports |
-| [4 — Exploratory analysis](notebooks/4_EDA.ipynb) | Demand-pattern figures |
-| [5 — Modelling](notebooks/5_modelling.ipynb) | Evaluation results, selected model and metadata |
-| [6 — Anomaly detection](notebooks/6_adv_modelling_anomaly_detection.ipynb) | Historical predictions, flags and consecutive groups |
-| [7 — Power BI export](notebooks/7_powerbi_export.ipynb) | Dashboard data tables |
+| [1 - Data collection](notebooks/01_data_collection.ipynb) | Downloaded raw data, if needed |
+| [2 - Database building](notebooks/2_database_building.ipynb) | SQLite tables populated from raw files |
+| [3 - Feature engineering](notebooks/3_feature_engineering.ipynb) | SQL feature table and CSV/Parquet exports |
+| [4 - Exploratory analysis](notebooks/4_EDA.ipynb) | Demand-pattern figures |
+| [5 - Modelling](notebooks/5_modelling.ipynb) | Evaluation results, selected model and metadata |
+| [6 - Anomaly detection](notebooks/6_adv_modelling_anomaly_detection.ipynb) | Historical predictions, flags and consecutive groups |
+| [7 - Power BI export](notebooks/7_powerbi_export.ipynb) | Dashboard data tables |
 
 Notebook 2 rebuilds database tables, including saved predictions and anomaly flags. Run the remaining notebooks afterwards to regenerate the outputs. Paths support execution from the project root or the `notebooks` directory.
 
