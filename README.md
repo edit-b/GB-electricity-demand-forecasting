@@ -61,8 +61,6 @@ Open [energy_demand_report.pbix](powerbi/energy_demand_report.pbix) in Power BI 
 
 Screenshots show example filter selections, their cards do not always represent the full dataset.
 
-<details>
-<summary>View the remaining dashboard pages</summary>
 
 ### Demand drivers
 
@@ -81,7 +79,7 @@ Screenshots show example filter selections, their cards do not always represent 
 
 ![Anomaly explorer](docs/images/05-anomaly-explorer.png)
 
-</details>
+
 
 ## Data and workflow
 
